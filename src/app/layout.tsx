@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Share Your Ideas",
-  description: "Share your innovative ideas with our community.",
+  title: "Share Your Thoughts",
+  description: "Share your innovative thought with our community.",
   icons: {
     icon: [
       {

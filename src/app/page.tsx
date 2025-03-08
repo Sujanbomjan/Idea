@@ -30,10 +30,10 @@ export default function ShareIdeasForm() {
 
     emailjs
       .send(
-        'service_nrbf069', // Replace with your actual EmailJS service ID
-        'template_ieu550n', // Replace with your EmailJS template ID
+        'service_hwx1wnf', // Replace with your actual EmailJS service ID
+        'template_twczbfe', // Replace with your EmailJS template ID
         templateParams,
-        '6ZWoe5eb2JalYE3EH' // Replace with your EmailJS public key
+        'zdQvB6du7sHXgZMnM' // Replace with your EmailJS public key
       )
       .then(
         () => {
@@ -51,12 +51,12 @@ export default function ShareIdeasForm() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-8">
       <div className="w-full md:w-1/2 p-8 bg-white shadow-2xl rounded-lg max-w-lg">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Share Your Brilliant Idea</h2>
-        <p className="text-gray-600 mb-6 text-center">Join our community and share your innovative ideas.</p>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Share Your feelings</h2>
+        <p className="text-gray-600 mb-6 text-center">Join the community and lets connect through experience</p>
         
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div>
-            <label className="block text-gray-700 font-medium">Full Name</label>
+            <label className="block text-gray-700 font-medium">Name</label>
             <input
               type="text"
               name="fullName"
@@ -75,7 +75,7 @@ export default function ShareIdeasForm() {
               value={formData.idea}
               onChange={handleChange}
               className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none text-black"
-              placeholder="Describe your idea here..."
+              placeholder="Describe your thought"
               rows={5}
               required
             />
